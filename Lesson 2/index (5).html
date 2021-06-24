@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+   <script>
+       "use strict"
+
+       function mathOperation(arg1, arg2, operation) {
+           switch (operation) {
+                case "+":
+                   return(add(arg1, arg2));
+                case "-":
+                   return(subtract(arg1, arg2));
+                case "*":
+                   return(multiply(arg1, arg2));
+                case "/":
+                   return(divide(arg1, arg2));
+           }
+       }
+       alert(mathOperation(5, 5, "*"));
+
+        function add(num1, num2) {
+            return (num1 + num2)
+        }
+        function subtract(num1, num2) {
+            return (num1 - num2)
+        }
+        function multiply(num1, num2) {
+            return (num1 * num2)
+        }
+        function divide(num1, num2) {
+            return (num1 / num2)
+        }
+
+   </script> 
+</body>
+</html>
